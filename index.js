@@ -20,7 +20,7 @@ const questions = [{
         message: "Describe your project",
     },
     {
-        type: "list",
+        type: "license",
         message: "What is the license for your project?",
         name: "license",
 
