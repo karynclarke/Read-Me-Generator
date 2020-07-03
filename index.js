@@ -36,8 +36,8 @@ const questions = [{
         choices: ["MIT", "Apache", "GNU"],
     },
     {
-        type: "contributers",
-        name: "contributers",
+        type: "contribute",
+        name: "contribute",
         message: "Were there any contributers to the project?",
     },
     {
