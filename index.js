@@ -6,25 +6,56 @@ const generateMarkdown = require("./utils/generateMarkdown")
 
 const questions = [{
         type: "input",
-        name: "name",
-        message: "What is your user name?",
-    },
-    {
-        type: "input",
         name: "projectTitle",
         message: "What is your project's title?",
     },
     {
         type: "input",
         name: "description",
-        message: "Describe your project",
+        message: "Describe the project",
+    },
+    {
+        type: "input",
+        name: "tableOfContents",
+        message: "Add the Table of Contents, separating elements by a comma",
+    },
+    {
+        type: "input",
+        name: "installation",
+        message: "What commands are needed to install the project?",
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "What commands are needed to use the project?",
     },
     {
         type: "license",
-        message: "What is the license for your project?",
         name: "license",
-
+        message: "What is the license for the project?",
         choices: ["MIT", "Apache", "GNU"],
+    },
+    {
+        type: "contributers",
+        name: "contributers",
+        message: "Were there any contributers to the project?",
+    },
+    {
+        type: "input",
+        name: "testRun",
+        message: "How is the project tested?",
+        default: "npm test",
+    },
+
+    {
+        type: "input",
+        name: "name",
+        message: "What is your github user name?",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email?",
     },
 ];
 
@@ -38,7 +69,5 @@ function init() {
         writeToFile("README.md", generateMarkdown(answers));
 
     });
-
 }
-
 init();
