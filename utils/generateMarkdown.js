@@ -32,9 +32,9 @@ function generateMarkdown(data) {
  
    <a name ="tests"> </a>
 ## How to Test
-   ${data.testRun}
+   ${data.tests}
    
-   <a name="hosted"></a>
+   <a name="repository"></a>
 ## GitHub Repository
    ${data.repository}
     
