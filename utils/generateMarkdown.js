@@ -1,44 +1,49 @@
 function generateMarkdown(data) {
     return `
 
-    # Project Title
-    ${data.projectTitle}
+# ${data.projectTitle}
 
-    ![badge](https://img.shields.io/badge/License-${data.license}-blue.svg)
+<a name="license"></a>
+![badge](https://img.shields.io/badge/License-${data.license}-blue.svg)
+    
+# Project Description
+>  ${data.description}
+    
+    
+# Table of Contents
+ * [Installation](#installation)
+ * [Usage](#usage)
+ * [Credits](#credits)
+ * [License](#license)
+ * [Contributing](#contributing)
+ * [Tests](#tests)
 
-    ## Project Description
-    >  ${data.description}
-
+ <a name="installation"></a>
+# Installation Steps
+  ${data.installation}
     
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
+  <a name="usage"> </a>
+# Commands Needed to Use 
+   ${data.usage}
+   
+   <a name="contributers"></a>
+## Contributers
+   ${data.contributers}
+ 
+   <a name = "tests"> </a>
+## How to Test
+   ${data.testRun}
     
-    ## Installation Steps
-    ${data.installation}
-    
-    ## Commands Needed to Use 
-    #${data.usage}
-    
-    ## Contributors
-    #${data.contribute}
-    
-    ## How to Test
-    #${data.testRun}
-    
-    ## Contact Info
-    #${data.name}
-    #${data.email}
+## GitHub Repository
+   ${data.repository}
     
     `;
 }
 /*
 ## Table of Contents
 ${data.tableOfContents}
-*/
+
+${data.email}
+    */
 
 module.exports = generateMarkdown;

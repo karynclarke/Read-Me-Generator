@@ -36,8 +36,8 @@ const questions = [{
         choices: ["MIT", "Apache", "GNU"],
     },
     {
-        type: "contribute",
-        name: "contribute",
+        type: "contributers",
+        name: "contributers",
         message: "Were there any contributers to the project?",
     },
     {
@@ -46,17 +46,16 @@ const questions = [{
         message: "How is the project tested?",
         default: "npm test",
     },
-
     {
         type: "input",
-        name: "name",
-        message: "What is your github user name?",
+        name: "repository",
+        message: "Where is the project hosted?",
     },
-    {
-        type: "input",
-        name: "email",
-        message: "What is your email?",
-    },
+    // {
+    //     type: "input",
+    //     name: "email",
+    //     message: "What is your email?",
+    // },
 ];
 
 function writeToFile(fileName, data) {
