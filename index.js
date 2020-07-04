@@ -28,7 +28,7 @@ const questions = [{
         type: "license",
         name: "license",
         message: "What is the license for the project?",
-        // 
+
     },
     {
         type: "contributers",

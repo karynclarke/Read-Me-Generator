@@ -4,8 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "mocha"
+        "test": "mocha --ui tdd tests/callbacks.js"
     },
+
     "repository": {
         "type": "git",
         "url": "git+https://github.com/karynclarke/Read-Me-Generator.git"
@@ -17,6 +18,7 @@
     },
     "homepage": "https://github.com/karynclarke/Read-Me-Generator#readme",
     "dependencies": {
-        "inquirer": "^7.2.0"
+        "inquirer": "^7.2.0",
+        "mocha": "^8.0.1"
     }
 }
