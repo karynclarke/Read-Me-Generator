@@ -15,7 +15,7 @@ function generateMarkdown(data) {
  * [Usage](#usage)
  * [Credits](#credits)
  * [License](#license)
- * [Contributing](#contributing)
+ * [Contributers](#contributers)
  * [Tests](#tests)
 
  <a name="installation"></a>
@@ -30,7 +30,7 @@ function generateMarkdown(data) {
 ## Contributers
    ${data.contributers}
  
-   <a name = "tests"> </a>
+   <a name ="tests"> </a>
 ## How to Test
    ${data.testRun}
     
@@ -39,11 +39,5 @@ function generateMarkdown(data) {
     
     `;
 }
-/*
-## Table of Contents
-${data.tableOfContents}
-
-${data.email}
-    */
 
 module.exports = generateMarkdown;

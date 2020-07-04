@@ -16,11 +16,6 @@ const questions = [{
     },
     {
         type: "input",
-        name: "tableOfContents",
-        message: "Add the Table of Contents, separating elements by a comma",
-    },
-    {
-        type: "input",
         name: "installation",
         message: "What commands are needed to install the project?",
     },
@@ -33,7 +28,7 @@ const questions = [{
         type: "license",
         name: "license",
         message: "What is the license for the project?",
-        choices: ["MIT", "Apache", "GNU"],
+        // 
     },
     {
         type: "contributers",
@@ -42,7 +37,7 @@ const questions = [{
     },
     {
         type: "input",
-        name: "testRun",
+        name: "tests",
         message: "How is the project tested?",
         default: "npm test",
     },
@@ -51,11 +46,8 @@ const questions = [{
         name: "repository",
         message: "Where is the project hosted?",
     },
-    // {
-    //     type: "input",
-    //     name: "email",
-    //     message: "What is your email?",
-    // },
+
+
 ];
 
 function writeToFile(fileName, data) {
