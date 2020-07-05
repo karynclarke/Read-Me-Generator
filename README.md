@@ -6,7 +6,7 @@
 ![badge](https://img.shields.io/badge/License-MIT-blue.svg)
     
 # Project Description
->  generates a read me page for a project using user input
+>  generates a project's Read Me based on user input
     
     
 # Table of Contents
@@ -19,15 +19,15 @@
 
  <a name="installation"></a>
 # Installation Steps
-  npm i
+  npm i on the command line in the terminal
     
   <a name="usage"> </a>
 # Commands Needed to Use 
-   node index.js
+   node index.js on the command line in the terminal
    
    <a name="contributers"></a>
 ## Contributers
-   tutors! 
+   lots of tutor help!
  
    <a name ="tests"> </a>
 ## How to Test
@@ -35,6 +35,6 @@
    
    <a name="repository"></a>
 ## GitHub Repository
-   git hub
+   https://github.com/karynclarke/Read-Me-Generator
     
     
